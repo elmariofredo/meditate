@@ -1,0 +1,12 @@
+apiVersion: meditate.vejlupek.cz/v1beta1
+kind: Sync
+metadata:
+  labels:
+    controller-tools.k8s.io: "1.0"
+  name: sync-sample
+spec:
+  repo: https://git.example.com/deploy/environments/ph/stage01/app
+  branch: master
+  namespace: stage01-app
+
+
